@@ -1,0 +1,11 @@
+const actions = {
+  GET_ALL_STUDENTS_REQUEST: 'GET_ALL_STUDENTS_REQUEST',
+  GET_ALL_STUDENTS_SUCCESS: 'GET_ALL_STUDENTS_SUCCESS',
+  GET_ALL_STUDENTS_ERROR: 'GET_ALL_STUDENTS_ERROR',
+
+  fetchStudents: () => ({
+    type: actions.GET_ALL_STUDENTS_REQUEST
+  }),
+
+};
+export default actions;

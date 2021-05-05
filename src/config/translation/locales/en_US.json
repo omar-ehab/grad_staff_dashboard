@@ -1,0 +1,22 @@
+{
+  "created_at": "Created At",
+  "markets": "Markets",
+  "withdraw_balance": "Withdraw Balance",
+  "withdraw_market_balance": "Withdraw Market Balance",
+  "market_name": "Market Name",
+  "market_balance": "Market Balance",
+  "students": "Students",
+  "show_student": "Show Student",
+  "recharge_student_balance": "Recharge Student Balance",
+  "id": "ID",
+  "name": "Name",
+  "mobile": "Mobile",
+  "email": "Email",
+  "actions": "Actions",
+  "sidebar.markets": "Markets",
+  "sidebar.students": "Students",
+  "topbar.logout": "Logout",
+  "page.signInRememberMe": "Remember Me",
+  "page.signInButton": "Sign In",
+  "page.signInTitle": "Sign In"
+}
