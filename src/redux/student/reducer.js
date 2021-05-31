@@ -1,5 +1,4 @@
 import actions from './actions';
-import moment from 'moment'
 
 const initState = {
   student: {},
@@ -50,7 +49,7 @@ export default function reducer(state = initState, { type, payload }) {
       const transactions = payload.transactions.map(transaction => {
         return {
           id: transaction.id,
-          accepted_at: moment(transaction.accepted_at).format('ddd DD-MMM-YYYY, hh:mm A'),
+          accepted_at: transaction.accepted_at,
           amount: `${transaction.amount} LE`,
           type: transaction.type,
         }
@@ -69,7 +68,7 @@ export default function reducer(state = initState, { type, payload }) {
         ...state,
         transactions: [{
           id: payload.transaction.id,
-          accepted_at: moment(payload.transaction.accepted_at).format('ddd DD-MMM-YYYY, hh:mm A'),
+          accepted_at: payload.transaction.accepted_at,
           amount: `${payload.transaction.amount} LE`,
           type: payload.transaction.type
         }, ...state.transactions]
