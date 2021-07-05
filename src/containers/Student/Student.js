@@ -55,7 +55,7 @@ export default function () {
     dispatch(studentActions.rechargeWalletRequest(student_id));
   }
 
-  const { student_id } = useParams()
+  const { student_id, id } = useParams()
 
   const dispatch = useDispatch();
 
@@ -74,7 +74,7 @@ export default function () {
   });
 
   useEffect(() => {
-    dispatch(studentActions.fetchStudent(student_id));
+    dispatch(studentActions.fetchStudent(id));
     dispatch(studentActions.fetchStudentWallet(student_id));
     dispatch(studentActions.fetchStudentTransactions(student_id));
   }, [dispatch, student_id]);
@@ -112,7 +112,7 @@ export default function () {
         <Form>
               { recharge_error.length ? <Alert message={recharge_error} type="error" style={{marginBottom: 10}}/> : "" }
               <Fieldset>
-                <Label>Lecture Name</Label>
+                <Label>Amount</Label>
                 <Input
                   label="Amount"
                   placeholder="Enter amount"

@@ -12,7 +12,7 @@ const margin = {
 export default function({student_id}) {
   return (
     <Button type="primary" style={margin}>
-      <Link style={{color: 'white'}} to={`students/${student_id}`}>
+      <Link style={{color: 'white'}} to={`students/${student_id.card_id}/${student_id.id}`}>
         <IntlMessages id="show_student" />
       </Link>
     </Button>

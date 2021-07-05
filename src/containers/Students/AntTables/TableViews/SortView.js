@@ -15,7 +15,7 @@ export default function(props) {
       title: <IntlMessages id="show_student" />,
       dataIndex: 'show_student',
       render: (text, record, index) => (
-        <ShowStudentButton student_id={record.id} />
+        <ShowStudentButton student_id={record} />
       ),
     };
 

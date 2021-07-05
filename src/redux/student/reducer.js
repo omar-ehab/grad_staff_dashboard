@@ -22,7 +22,8 @@ export default function reducer(state = initState, { type, payload }) {
       return {
         ...state,
         student: {
-          id: payload.student.card_id,
+          id: payload.student.id,
+          card_id: payload.student.card_id,
           name: payload.student.name,
           email: payload.student.email,
           birth_date: payload.student.birth_date,
